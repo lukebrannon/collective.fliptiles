@@ -19,10 +19,10 @@ class IFlipTile(form.Schema):
             title=_(u"Tile Picture"),
             description=_(u"Please upload an image for the front of your tile."),
             required=False,
-        )    
+        )
 
-    relatedItem = RelationChoice(
+    targetPage = RelationChoice(
             title=_(u"Target Page"),
-            source=ObjPathSourceBinder(object_provides=IPresenter.__identifier__),
+            source=ObjPathSourceBinder(),
             required=False,
         )

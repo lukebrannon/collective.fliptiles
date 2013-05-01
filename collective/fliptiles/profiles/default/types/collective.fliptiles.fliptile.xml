@@ -4,7 +4,7 @@
 
  <!-- Basic metadata -->
  <property name="title" i18n:translate="">Flip Tile</property>
- <property name="description" i18n:translate="">A Folder to hold flip tiles</property>
+ <property name="description" i18n:translate="">A Flip Tile</property>
  <property name="content_icon">document_icon.gif</property>
  <property name="allow_discussion">False</property>
  <property name="global_allow">False</property>
@@ -12,7 +12,7 @@
  <property name="allowed_content_types" />
 
  <!-- schema interface -->
- <property name="schema">collective.fliptiles.flipfolder.IFlipTile</property>
+ <property name="schema">collective.fliptiles.fliptile.IFlipTile</property>
 
  <!-- class used for content items -->
  <property name="klass">plone.dexterity.content.Item</property>

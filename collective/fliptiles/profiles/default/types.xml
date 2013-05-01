@@ -1,4 +1,4 @@
 <object name="portal_types">
- <object name="collective.fliptiles.flip_folder" meta_type="Dexterity FTI" />
- <object name="collective.fliptiles.flip_tile" meta_type="Dexterity FTI" />
+ <object name="collective.fliptiles.flipfolder" meta_type="Dexterity FTI" />
+ <object name="collective.fliptiles.fliptile" meta_type="Dexterity FTI" />
 </object>
