@@ -4,9 +4,8 @@ from zope import schema
 from plone.directives import form, dexterity
 
 from plone.namedfile.field import NamedImage
+from zope import schema
 
-
-from z3c.relationfield.schema import RelationChoice
 from plone.formwidget.contenttree import ObjPathSourceBinder
 
 from collective.fliptiles import _
@@ -21,8 +20,10 @@ class IFlipTile(form.Schema):
             required=False,
         )
 
-    targetPage = RelationChoice(
-            title=_(u"Target Page"),
-            source=ObjPathSourceBinder(),
-            required=False,
-        )
+    external_url = schema.URI(
+    		title=_(u"External Link"),
+    		description=_(u"Please provide a valid external URL"),
+    		required=False,
+    	)
+
+    
