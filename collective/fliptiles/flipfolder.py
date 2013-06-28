@@ -2,6 +2,7 @@ from five import grok
 from zope import schema
 
 from plone.directives import form, dexterity
+from plone.app.uuid.utils import uuidToURL
 
 from collective.fliptiles import _
 
@@ -46,9 +47,15 @@ class View(grok.View):
                 theHTML.append('<li>')
                 theHTML.append('<img src="%s/@@download/picture" />'%(tile.absolute_url()))
                 theHTML.append('<h3>%s</h3>'%(tile.title))
-                theHTML.append('<p><a href="tile.absolute_url()">%s</a></p>'%(tile.description))
+                if tile.internal_link_uuid:
+                    theHTML.append('<p><a href="%s">%s</a></p>'%(uuidToURL(tile.internal_link_uuid), tile.description))
+                elif tile.external_url:
+                    theHTML.append('<p><a href="%s">%s</a></p>'%(tile.external_url, tile.description))
+                else:
+                    theHTML.append('<p>%s</p>'%(tile.description))
                 theHTML.append('</li>')
             theHTML.append('</ul>')
             ++row_number
 
         return ('').join(theHTML)
+
