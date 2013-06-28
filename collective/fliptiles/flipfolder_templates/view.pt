@@ -11,9 +11,7 @@
     <tal:main-macro metal:define-macro="main">
 
         <tal:outter tal:define="tiles view/getTiles">
-          <tal:inner tal:repeat="tile tiles">
             <span tal:content="structure view/getTileTemplate"/>
-          </tal:inner>
         </tal:outter>
 
         <!--<span tal:replace="structure view/getTileTemplate" />-->
