@@ -12,34 +12,25 @@
     <!-- Grok the package to initialise schema interfaces and content classes -->
     <grok:grok package="." />
 
-  <genericsetup:registerProfile
-      name="default"
-      title="collective.fliptiles"
-      directory="profiles/default"
-      description="Installs the collective.fliptiles package"
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
-  <!-- -*- extra stuff goes here -*- -->
+
+    <include file="skins.zcml" />
+
+    <genericsetup:registerProfile
+        name="default"
+        title="collective.fliptiles"
+        directory="profiles/default"
+        description="Installs the collective.fliptiles package"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:registerProfile
+        name="uninstall"
+        title="collective.fliptiles"
+        directory="profiles/default"
+        description="Removes the collective.fliptiles package"
+        profiles="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <!-- -*- extra stuff goes here -*- -->
   
-<!-- static resource directory -->
-<browser:resourceDirectory
-    name="collective.fliptiles"
-    directory="resources/" 
-     />
-
-<browser:resource
-    name="jquery.flippy.js"
-    file="flippy_files/jquery.flippy.js"
-     />
-
-<browser:resource
-    name="jquery.flippy.min.js"
-    file="flippy_files/jquery.flippy.js"
-    />
-
-<browser:resource
-    name="flipper.js"
-    file="flipper.js"
-    />
-
 </configure>
