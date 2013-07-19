@@ -1,0 +1,16 @@
+<object name="portal_skins"
+        meta_type="Plone Skins Tool"
+        >
+
+ <object name="collective_fliptiles"
+         meta_type="Filesystem Directory View"
+         directory="collective.fliptiles:skins/collective_fliptiles"
+         recusive="True"
+         />
+         
+ <skin-path name="*">
+  <layer insert-after="custom"
+         name="collective_fliptiles"/>
+ </skin-path>
+
+</object>

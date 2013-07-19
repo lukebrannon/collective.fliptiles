@@ -42,9 +42,9 @@ class View(grok.View):
         tile_segments = [tiles[x:x+column_width] for x in range(0,len(tiles),column_width)]
         row_number = 0
         for segment in tile_segments:
-            theHTML.append('<ul id=tilerow-%s>'%(row_number))
+            theHTML.append('<ul id="tilerow-%s">'%(row_number))
             for tile in segment:
-                theHTML.append('<li>')
+                theHTML.append('<li class="flipbox">')
                 theHTML.append('<img src="%s/@@download/picture" />'%(tile.absolute_url()))
                 theHTML.append('<h3>%s</h3>'%(tile.title))
                 if tile.internal_link_uuid:

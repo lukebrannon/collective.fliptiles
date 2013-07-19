@@ -1,5 +1,5 @@
-$(".myFlippyCard").flippy( {
-    color_target:"white",
-    duration: "500"
-   
-}); 
+$(".flipbox").flippy({
+	color_target: "red",
+	duration: "500",
+	verso: "woohoo"
+	});
