@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<object name="portal_skins"
+        meta_type="Plone Skins Tool"
+        >
+
+ <object name="collective_megadrop"
+         meta_type="Filesystem Directory View"
+         directory="collective.fliptiles:skins/collective_fliptiles"/>
+ <skin-path name="*">
+  <layer insert-after="custom"
+         name="collective_fliptiles"/>
+ </skin-path>
+
+</object>
+
