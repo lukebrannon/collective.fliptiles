@@ -25,10 +25,10 @@
 
     <genericsetup:registerProfile
         name="uninstall"
-        title="collective.fliptiles"
-        directory="profiles/default"
+        title="collective.fliptiles uninstaller"
+        directory="profiles/uninstall"
         description="Removes the collective.fliptiles package"
-        profiles="Products.GenericSetup.interfaces.EXTENSION"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
         />
 
     <!-- -*- extra stuff goes here -*- -->
