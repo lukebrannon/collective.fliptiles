@@ -4,7 +4,7 @@
         meta_type="Plone Skins Tool"
         >
 
- <object name="collective_megadrop"
+ <object name="collective_fliptiles"
          meta_type="Filesystem Directory View"
          directory="collective.fliptiles:skins/collective_fliptiles"/>
  <skin-path name="*">
