@@ -1,5 +1,7 @@
-$(".myFlippyCard").flippy( {
-    color_target:"white",
-    duration: "500"
-   
-}); 
+$(function(){
+
+    $(".myFlippyCard").on("hover",function(e){
+        $(".flipbox").flippyReverse();
+        e.preventDefault();
+    });
+});
