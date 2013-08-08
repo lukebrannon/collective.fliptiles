@@ -1,16 +1,8 @@
 <?xml version="1.0"?>
 <object name="portal_javascripts" meta_type="JavaScripts Registry">
-<!-- This is the jquery flippy.js stuff -->
-    <javascript cacheable="True"
-                id="jquery.flippy.js"
-                compression="safe"
-                cookable="True"
-                enabled="True"
-                expression=""
-                inline="False"
-     />
+<!-- This is the jqueryflipp.js stuff -->
     <javascript cacheable="True"                  
-                id="jquery.flippy.min.js"
+                id="jquery.quickflip.min.js"
                 compression="safe"
                 cookable="True"
                 enabled="True"

@@ -1,7 +1,3 @@
-$(function(){
-
-    $(".myFlippyCard").on("hover",function(e){
-        $(".flipbox").flippyReverse();
-        e.preventDefault();
-    });
+$(document).ready(function() {
+    $('.quickFlip').quickFlip();
 });
