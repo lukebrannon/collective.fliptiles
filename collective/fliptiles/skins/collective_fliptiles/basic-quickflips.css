@@ -28,17 +28,18 @@ body {
 
 /* the rest of this is irrelevent */
 
-H1, H2 {
+/*H1, H2 {
     float: left;
     padding-right: 15px;
     line-height: 32px;
 }
-
-.clear {
+*/
+/* .clear {
     clear: both;
     margin: 0;
     padding: 0;
 }
+*/
 
 .redPanel, .blackPanel {
     text-align: center;
