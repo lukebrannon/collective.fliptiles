@@ -11,12 +11,9 @@
     <tal:main-macro metal:define-macro="main">
 
 <div class="flipbox-container">
-    <div id="myFlippyCard">
-
-        <tal:outter tal:define="tiles view/getTiles">
+           <tal:outter tal:define="tiles view/getTiles">
             <span tal:content="structure view/getTileTemplate"/>
-        </tal:outter>
-    </div>
+           </tal:outter>
 </div>
     </tal:main-macro>
 </metal:main>

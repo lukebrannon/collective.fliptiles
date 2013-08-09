@@ -44,16 +44,18 @@ class View(grok.View):
         for segment in tile_segments:
             theHTML.append('<ul id=tilerow-%s>'%(row_number))
             for tile in segment:
+                theHTML.append('<div class="quickFlip"><div class="blackPanel">')
                 theHTML.append('<li>')
-                theHTML.append('<img src="%s/@@download/picture" />'%(tile.absolute_url()))
-                theHTML.append('<h3>%s</h3>'%(tile.title))
+                theHTML.append('<div class="first quickFlipCta"><img src="%s/@@download/picture" /></div></div>'%(tile.absolute_url()))
+                theHTML.append('<div class="redPanel"><div class="first quickFlipCta"><h3>%s</h3>'%(tile.title))
                 if tile.internal_link_uuid:
                     theHTML.append('<p><a href="%s">%s</a></p>'%(uuidToURL(tile.internal_link_uuid), tile.description))
                 elif tile.external_url:
                     theHTML.append('<p><a href="%s">%s</a></p>'%(tile.external_url, tile.description))
                 else:
-                    theHTML.append('<p>%s</p>'%(tile.description))
+                    theHTML.append('<p>%s</p></div>'%(tile.description))
                 theHTML.append('</li>')
+                theHTML.append('</div>')
             theHTML.append('</ul>')
             ++row_number
 
