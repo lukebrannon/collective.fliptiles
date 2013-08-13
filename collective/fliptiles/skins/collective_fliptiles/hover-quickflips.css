@@ -1,14 +1,6 @@
-body {
-    text-align: center;
-}
 
 a {
     color: #75941f;
-}
-
-#content {
-    width: 600px;
-    margin: 30px auto;
 }
 
 .clear {
@@ -18,21 +10,21 @@ a {
 }
 
 .quickFlip {
-    height: 50px;
-    width: 60px;
+    height: 240px;
+    width: 240px;
     float: left;
 }
 
 .panel1, .panel2, .panel3 {
-    height: 50px;
-    width: 60px;
+    height: 240px;
+    width: 240px;
     position: absolute;
     overflow: hidden;
     text-align: center;
-    color: #FFF;
-    font-size: 18px;
+    color: black;
+    font-size: 10px;
     font-family: "Trebuchet MS", Verdana, Sans-serif, sans;
-    line-height: 40px;
+    line-height: 2em;
 }
 
 .panel1 {
@@ -41,11 +33,11 @@ a {
 }
 
 .panel2 {
-    background-color: #FFD993;
-    color: #333;
+    background-color: white;
+    color: black;
 }
 
-.addthis_toolbox {
+/* .addthis_toolbox {
     width: 240px;
     margin: 30px auto;
 }
@@ -53,7 +45,4 @@ a {
 .addthis_toolbox a {
     color: #000;
 }
-
-.footer {
-    font-size: .8em;
-}
+ */
