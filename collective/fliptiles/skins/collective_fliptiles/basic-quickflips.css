@@ -9,13 +9,13 @@ body {
     padding-bottom:65px;
     }
 
-.quickFlip, .quickFlip3, .quickFlip ul li, .quickFlip img {
+.quickFlip0, .quickFlip1, .quickFlip2, .quickFlip3, .quickFlip ul li, .quickFlip img {
     height: 220px;
     width: 300px;
     list-style-type:none;
 }
 
-.quickFlip ul#tilerow-0 {
+.quickFlip0 ul#tilerow-0 {
     margin-left:0px;
 }
 
@@ -53,13 +53,13 @@ body {
 
 /**** panels ****/
 
-.quickFlip, .quickFlip2, .quickFlip3 {
+.quickFlip0, .quickFlip1, .quickFlip2, .quickFlip3 {
     font-family: "Trebuchet MS", Verdana, Sans-serif, sans;
     font-size: 13px;
     position: relative;
 }
 
-.quickFlip .blackPanel, .quickFlip2 .blackPanel, .quickFlip3 .blackPanel {
+.quickFlip0 .blackPanel, .quickFlip1 .blackPanel, .quickFlip2 .blackPanel, .quickFlip3 .blackPanel {
     background-color: #FFD993;
     color: darkbrown;
     border: 1px outset #A61C14;
@@ -67,7 +67,7 @@ body {
     -webkit-border-radius: 8px;
 }
 
-.quickFlip .redPanel, .quickFlip2 .redPanel, .quickFlip3 .redPanel {
+.quickFlip0 .redPanel, .quickFlip1 .redPanel, .quickFlip2 .redPanel, .quickFlip3 .redPanel {
     background-color: #FFF;
     color: black;
     border: 1px outset #4f6417;
