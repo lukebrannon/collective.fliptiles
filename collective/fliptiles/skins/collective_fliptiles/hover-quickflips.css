@@ -1,48 +1,42 @@
-
-a {
-    color: #75941f;
-}
-
-.clear {
-    clear: both;
-    margin: 0;
-    padding: 0;
+.flipbox-container {
+   margin: 5px 5px 5px 5px;
+   padding:2px 2px 2px 2px;
 }
 
 .quickFlip {
-    height: 240px;
-    width: 240px;
+    height: 236px;
+    width: 236px;
     float: left;
 }
 
-.panel1, .panel2, .panel3 {
-    height: 240px;
-    width: 240px;
+.panel1, .panel3 {
+    height:90%;
+    width:90%;
     position: absolute;
     overflow: hidden;
-    text-align: center;
     color: black;
-    font-size: 10px;
-    font-family: "Trebuchet MS", Verdana, Sans-serif, sans;
-    line-height: 2em;
 }
-
-.panel1 {
-    background-color: #95BD28;
-    z-index: 10;
+.panel1 img {
+    height:90%;
+    width:90%;
+    position:absolute;
+    margin:11px 0px 5px 11px;
+    box-shadow: 2px 2px 5px black;
 }
 
 .panel2 {
+    position:absolute;
     background-color: white;
     color: black;
+    line-height:100%;
+    box-shadow: 5px 5px 25px black;
+    z-index:2;
+    font-size:95%;
+    text-align:left;
 }
+ 
 
-/* .addthis_toolbox {
-    width: 240px;
-    margin: 30px auto;
+.panel2 h2, .panel2 p, .panel2 a {
+    margin:5px 5px 5px 5px;
+    font-weight:normal;
 }
-
-.addthis_toolbox a {
-    color: #000;
-}
- */
