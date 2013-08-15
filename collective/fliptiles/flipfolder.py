@@ -40,7 +40,6 @@ class View(grok.View):
             tiles.append(item[1])
 
         tile_segments = [tiles[x:x+column_width] for x in range(0,len(tiles),column_width)]
-        row_number = 0
         for segment in tile_segments:
             for tile in segment:
                 theHTML.append('<div class="quickFlip">')
